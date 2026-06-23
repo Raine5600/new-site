@@ -1,6 +1,6 @@
-# new-site
+# Black Sheep — Custom Products POS
 
-Starter repository for a new static site project.
+Point of sale for custom stickers, shirts, cups, rugs, and more.
 
 ## Local preview
 
@@ -13,5 +13,5 @@ Open [http://localhost:8080](http://localhost:8080).
 
 ## Structure
 
-- `index.html` — starter page
-- `images/` — assets (add `logo.png` for favicon)
+- `index.html` — POS dashboard
+- `images/logo.jpg` — Black Sheep brand logo
