@@ -60,7 +60,8 @@
     .header-inner {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 16px 24px;
+      padding: 10px 24px;
+      min-height: 72px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -73,12 +74,26 @@
       gap: 14px;
       text-decoration: none;
       color: inherit;
+      min-width: 0;
+    }
+
+    .brand-logo-wrap {
+      height: 56px;
+      width: min(280px, 52vw);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
     }
 
     .brand-logo {
-      height: 52px;
+      height: 112px;
       width: auto;
+      max-width: none;
       display: block;
+      object-fit: cover;
+      object-position: center center;
+      transform: translateY(2px);
     }
 
     .brand-tag {
@@ -316,6 +331,9 @@
 
     @media (max-width: 640px) {
       .brand-tag { display: none; }
+      .brand-logo-wrap { height: 48px; width: min(220px, 58vw); }
+      .brand-logo { height: 96px; }
+      .header-inner { padding: 8px 16px; min-height: 64px; }
       .hero { padding: 28px 24px; }
       .hero-stat { width: 100%; }
     }
@@ -326,7 +344,9 @@
   <header>
     <div class="header-inner">
       <a href="index.html" class="brand">
-        <img src="images/logo.jpg" alt="Black Sheep" class="brand-logo" />
+        <span class="brand-logo-wrap">
+          <img src="images/logo.jpg" alt="Black Sheep" class="brand-logo" />
+        </span>
         <span class="brand-tag">Custom Products POS</span>
       </a>
       <div class="header-actions">
