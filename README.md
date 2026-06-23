@@ -1,6 +1,12 @@
-# Black Sheep — Custom Products POS
+# Black Sheep — Custom Products
 
-Point of sale for custom stickers, shirts, cups, rugs, and more.
+E-commerce storefront for custom stickers, shirts, cups, rugs, and more.
+
+## Pages
+
+- `index.html` — Homepage (hero, trust signals, categories, reviews, FAQ, SEO schema)
+- `shop.html` — Product catalog with category filters
+- `quote.html` — Ad-ready quote landing page with lead form
 
 ## Local preview
 
@@ -9,9 +15,6 @@ cd new-site
 python3 -m http.server 8080
 ```
 
-Open [http://localhost:8080](http://localhost:8080).
+## Deploy
 
-## Structure
-
-- `index.html` — POS dashboard
-- `images/logo.jpg` — Black Sheep brand logo
+Connect this repo to Vercel or GitHub Pages, then update canonical URLs in each HTML `<head>`.

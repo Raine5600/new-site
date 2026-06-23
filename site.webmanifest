@@ -1,7 +1,7 @@
 {
-  "name": "Black Sheep — Custom Products POS",
+  "name": "Black Sheep — Custom Products",
   "short_name": "Black Sheep",
-  "description": "Point of sale for custom stickers, shirts, cups, rugs, and more.",
+  "description": "Custom stickers, shirts, cups, rugs, and more. Free quotes in 24 hours.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

@@ -3,450 +3,350 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Black Sheep — Custom Products POS</title>
-  <meta name="description" content="Black Sheep point of sale — custom stickers, shirts, cups, rugs, and more. Create and manage orders in one place." />
+  <title>Black Sheep — Custom Stickers, Shirts, Cups, Rugs &amp; More</title>
+  <meta name="description" content="Order custom stickers, shirts, cups, rugs, hats, and more from Black Sheep. Free quotes in 24 hours. Fast turnaround, premium quality, shipped nationwide." />
+  <meta name="keywords" content="custom stickers, custom shirts, custom cups, custom rugs, personalized merchandise, Black Sheep, custom printing" />
   <meta name="author" content="Black Sheep" />
   <meta name="theme-color" content="#0a0a0a" />
-  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://github.com/Raine5600/new-site" />
   <link rel="icon" type="image/jpeg" href="images/logo.jpg" />
   <link rel="apple-touch-icon" href="images/logo.jpg" />
   <link rel="manifest" href="site.webmanifest" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Black Sheep" />
-  <meta property="og:title" content="Black Sheep — Custom Products POS" />
-  <meta property="og:description" content="Custom stickers, shirts, cups, rugs, and more." />
-  <meta property="og:image" content="images/logo.jpg" />
+  <meta property="og:title" content="Black Sheep — Custom Products Made Easy" />
+  <meta property="og:description" content="Custom stickers, shirts, cups, rugs &amp; more. Free quote in 24 hours." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/Raine5600/new-site/main/images/logo.jpg" />
   <meta property="og:image:alt" content="Black Sheep logo" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Black Sheep — Custom Products" />
+  <meta name="twitter:description" content="Stickers, shirts, cups, rugs &amp; more. Free quote in 24hrs." />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/Raine5600/new-site/main/images/logo.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Pacifico&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --black: #0a0a0a;
-      --white: #ffffff;
-      --gray-50: #fafafa;
-      --gray-100: #f4f4f5;
-      --gray-200: #e4e4e7;
-      --gray-400: #a1a1aa;
-      --gray-600: #52525b;
-      --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.04);
-      --shadow-lg: 0 4px 20px rgba(0,0,0,0.08);
-      --radius: 16px;
-      --radius-sm: 10px;
-    }
-
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    ::selection { background: var(--black); color: var(--white); }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--gray-50);
-      color: var(--black);
-      min-height: 100vh;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ── HEADER ── */
-    header {
-      background: var(--white);
-      border-bottom: 1px solid var(--gray-200);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    .header-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 10px 24px;
-      min-height: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      text-decoration: none;
-      color: inherit;
-      min-width: 0;
-    }
-
-    .brand-logo-wrap {
-      height: 56px;
-      width: min(280px, 52vw);
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      flex-shrink: 0;
-    }
-
-    .brand-logo {
-      height: 112px;
-      width: auto;
-      max-width: none;
-      display: block;
-      object-fit: cover;
-      object-position: center center;
-      transform: translateY(2px);
-    }
-
-    .brand-tag {
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--gray-400);
-      padding-left: 14px;
-      border-left: 1px solid var(--gray-200);
-    }
-
-    .header-actions {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 20px;
-      border-radius: 100px;
-      font-family: inherit;
-      font-size: 0.88rem;
-      font-weight: 600;
-      text-decoration: none;
-      border: none;
-      cursor: pointer;
-      transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
-    }
-
-    .btn:active { transform: scale(0.97); }
-
-    .btn-ghost {
-      background: transparent;
-      color: var(--gray-600);
-      border: 1px solid var(--gray-200);
-    }
-
-    .btn-ghost:hover { background: var(--gray-100); color: var(--black); }
-
-    .btn-primary {
-      background: var(--black);
-      color: var(--white);
-      box-shadow: var(--shadow);
-    }
-
-    .btn-primary:hover { box-shadow: var(--shadow-lg); }
-
-    /* ── MAIN ── */
-    main {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 32px 24px 64px;
-    }
-
-    .hero {
-      background: var(--white);
-      border: 1px solid var(--gray-200);
-      border-radius: var(--radius);
-      padding: 40px 36px;
-      margin-bottom: 28px;
-      box-shadow: var(--shadow);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 32px;
-      flex-wrap: wrap;
-    }
-
-    .hero-text h1 {
-      font-family: 'Pacifico', cursive;
-      font-size: clamp(1.8rem, 4vw, 2.4rem);
-      font-weight: 400;
-      margin-bottom: 8px;
-      line-height: 1.2;
-    }
-
-    .hero-text p {
-      color: var(--gray-600);
-      font-size: 1rem;
-      max-width: 420px;
-      line-height: 1.55;
-    }
-
-    .hero-stat {
-      text-align: center;
-      padding: 20px 28px;
-      background: var(--gray-50);
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--gray-200);
-      min-width: 140px;
-    }
-
-    .hero-stat-num {
-      font-size: 2rem;
-      font-weight: 700;
-      line-height: 1;
-      display: block;
-    }
-
-    .hero-stat-label {
-      font-size: 0.75rem;
-      color: var(--gray-400);
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-top: 6px;
-      display: block;
-    }
-
-    .section-head {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      margin-bottom: 18px;
-      gap: 16px;
-    }
-
-    .section-head h2 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-
-    .section-head span {
-      font-size: 0.82rem;
-      color: var(--gray-400);
-    }
-
-    /* ── PRODUCT GRID ── */
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 14px;
-      margin-bottom: 36px;
-    }
-
-    .product-card {
-      background: var(--white);
-      border: 1px solid var(--gray-200);
-      border-radius: var(--radius);
-      padding: 28px 20px 22px;
-      text-align: center;
-      text-decoration: none;
-      color: inherit;
-      cursor: pointer;
-      transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
-      box-shadow: var(--shadow);
-    }
-
-    .product-card:hover {
-      border-color: var(--black);
-      box-shadow: var(--shadow-lg);
-      transform: translateY(-2px);
-    }
-
-    .product-icon {
-      font-size: 2.4rem;
-      margin-bottom: 14px;
-      display: block;
-      line-height: 1;
-    }
-
-    .product-name {
-      font-size: 0.95rem;
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
-
-    .product-desc {
-      font-size: 0.78rem;
-      color: var(--gray-400);
-      line-height: 1.4;
-    }
-
-    /* ── QUICK ACTIONS ── */
-    .actions-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 14px;
-    }
-
-    .action-card {
-      background: var(--white);
-      border: 1px solid var(--gray-200);
-      border-radius: var(--radius);
-      padding: 24px;
-      display: flex;
-      align-items: flex-start;
-      gap: 16px;
-      text-decoration: none;
-      color: inherit;
-      transition: border-color 0.2s, box-shadow 0.2s;
-      box-shadow: var(--shadow);
-    }
-
-    .action-card:hover {
-      border-color: var(--black);
-      box-shadow: var(--shadow-lg);
-    }
-
-    .action-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      background: var(--gray-100);
-      display: grid;
-      place-items: center;
-      font-size: 1.2rem;
-      flex-shrink: 0;
-    }
-
-    .action-body h3 {
-      font-size: 0.95rem;
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
-
-    .action-body p {
-      font-size: 0.82rem;
-      color: var(--gray-600);
-      line-height: 1.45;
-    }
-
-    footer {
-      text-align: center;
-      padding: 32px 24px;
-      color: var(--gray-400);
-      font-size: 0.78rem;
-      border-top: 1px solid var(--gray-200);
-      background: var(--white);
-    }
-
-    @media (max-width: 640px) {
-      .brand-tag { display: none; }
-      .brand-logo-wrap { height: 48px; width: min(220px, 58vw); }
-      .brand-logo { height: 96px; }
-      .header-inner { padding: 8px 16px; min-height: 64px; }
-      .hero { padding: 28px 24px; }
-      .hero-stat { width: 100%; }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Black Sheep",
+        "url": "https://github.com/Raine5600/new-site",
+        "logo": "https://raw.githubusercontent.com/Raine5600/new-site/main/images/logo.jpg",
+        "description": "Custom stickers, shirts, cups, rugs, and personalized merchandise."
+      },
+      {
+        "@type": "WebSite",
+        "name": "Black Sheep",
+        "url": "https://github.com/Raine5600/new-site",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://github.com/Raine5600/new-site/shop.html?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Store",
+        "name": "Black Sheep Custom Products",
+        "image": "https://raw.githubusercontent.com/Raine5600/new-site/main/images/logo.jpg",
+        "priceRange": "$$",
+        "address": { "@type": "PostalAddress", "addressCountry": "US" }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
-  <header>
+  <div class="promo-bar">
+    <strong>Free custom quote in 24 hours</strong> · Stickers, shirts, cups, rugs &amp; more — ships nationwide
+  </div>
+
+  <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="brand">
+      <a href="index.html" class="brand" aria-label="Black Sheep home">
         <span class="brand-logo-wrap">
-          <img src="images/logo.jpg" alt="Black Sheep" class="brand-logo" />
+          <img src="images/logo.jpg" alt="Black Sheep custom products logo" class="brand-logo" width="280" height="56" />
         </span>
-        <span class="brand-tag">Custom Products POS</span>
       </a>
+      <nav class="nav-desktop" aria-label="Main navigation">
+        <a href="shop.html" class="active">Shop</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+      </nav>
       <div class="header-actions">
-        <button class="btn btn-ghost" type="button">Orders</button>
-        <button class="btn btn-primary" type="button">+ New Order</button>
+        <a href="shop.html" class="btn btn-ghost">Shop All</a>
+        <a href="quote.html" class="btn btn-primary">Get Free Quote</a>
+        <button class="cart-btn" type="button" aria-label="Cart, 0 items">🛒<span class="cart-count">0</span></button>
+        <button class="menu-toggle" type="button" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
       </div>
     </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="shop.html">Shop</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="quote.html">Get Free Quote</a>
+    </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Black Sheep</h1>
-        <p>Your point of sale for custom stickers, shirts, cups, rugs, and more. Start a new order or pick a product category below.</p>
-      </div>
-      <div class="hero-stat">
-        <span class="hero-stat-num">0</span>
-        <span class="hero-stat-label">Open Orders</span>
+    <!-- Hero: message-match for ad traffic -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <span class="hero-eyebrow">Custom products · Made to order</span>
+          <h1>Stand Out.<br />Go Black Sheep.</h1>
+          <p class="hero-lead">Premium custom stickers, shirts, cups, rugs, and more — designed by you, made by us. Perfect for brands, events, gifts, and everyday flex.</p>
+          <ul class="hero-bullets">
+            <li>Free quote within 24 hours</li>
+            <li>Low minimums on most products</li>
+            <li>Fast production &amp; nationwide shipping</li>
+          </ul>
+          <div class="hero-ctas">
+            <a href="shop.html" class="btn btn-primary btn-lg">Shop Custom Gear</a>
+            <a href="quote.html" class="btn btn-ghost btn-lg">Get Free Quote</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="images/logo.jpg" alt="Black Sheep — custom stickers, shirts, cups, and rugs" width="340" height="340" />
+          <p class="hero-visual-tag">Your design · Our craft</p>
+        </div>
       </div>
     </section>
 
-    <div class="section-head">
-      <h2>Product Categories</h2>
-      <span>Tap to start an order</span>
-    </div>
+    <!-- Trust strip: social proof (Allbirds/Glossier pattern) -->
+    <section class="trust-strip" aria-label="Trust indicators">
+      <div class="container trust-grid">
+        <div class="trust-item"><strong>★ 4.9 / 5</strong><span>Customer rating</span></div>
+        <div class="trust-item"><strong>500+</strong><span>Orders delivered</span></div>
+        <div class="trust-item"><strong>3–5 days</strong><span>Avg. production</span></div>
+        <div class="trust-item"><strong>100%</strong><span>Satisfaction focus</span></div>
+      </div>
+    </section>
 
-    <div class="product-grid">
-      <a class="product-card" href="#" data-category="stickers">
-        <span class="product-icon">🏷️</span>
-        <div class="product-name">Stickers</div>
-        <div class="product-desc">Die-cut, vinyl, sheets &amp; bulk</div>
-      </a>
-      <a class="product-card" href="#" data-category="shirts">
-        <span class="product-icon">👕</span>
-        <div class="product-name">Shirts</div>
-        <div class="product-desc">DTF, screen print, embroidery</div>
-      </a>
-      <a class="product-card" href="#" data-category="cups">
-        <span class="product-icon">☕</span>
-        <div class="product-name">Cups</div>
-        <div class="product-desc">Mugs, tumblers, drinkware</div>
-      </a>
-      <a class="product-card" href="#" data-category="rugs">
-        <span class="product-icon">🧶</span>
-        <div class="product-name">Rugs</div>
-        <div class="product-desc">Custom shapes &amp; sizes</div>
-      </a>
-      <a class="product-card" href="#" data-category="hats">
-        <span class="product-icon">🧢</span>
-        <div class="product-name">Hats</div>
-        <div class="product-desc">Caps, beanies, patches</div>
-      </a>
-      <a class="product-card" href="#" data-category="more">
-        <span class="product-icon">✨</span>
-        <div class="product-name">More</div>
-        <div class="product-desc">Banners, signs, decals &amp; more</div>
-      </a>
-    </div>
+    <!-- Categories: clear product discovery (Baymard) -->
+    <section class="section" id="shop">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow">Shop by category</span>
+          <h2>What Do You Want Custom?</h2>
+          <p>Pick a product type to get started. Every order includes a free proof before we print.</p>
+        </div>
+        <div class="category-grid">
+          <a href="shop.html#stickers" class="category-card">
+            <div class="category-visual" aria-hidden="true">🏷️</div>
+            <div class="category-body">
+              <h3>Custom Stickers</h3>
+              <p>Die-cut vinyl, kiss-cut sheets, bumper stickers &amp; bulk runs.</p>
+              <span class="category-price">From $0.45 each</span>
+            </div>
+          </a>
+          <a href="shop.html#shirts" class="category-card">
+            <div class="category-visual" aria-hidden="true">👕</div>
+            <div class="category-body">
+              <h3>Custom Shirts</h3>
+              <p>DTF, screen print, embroidery — tees, hoodies &amp; more.</p>
+              <span class="category-price">From $14 each</span>
+            </div>
+          </a>
+          <a href="shop.html#cups" class="category-card">
+            <div class="category-visual" aria-hidden="true">☕</div>
+            <div class="category-body">
+              <h3>Custom Cups</h3>
+              <p>Mugs, tumblers, water bottles &amp; drinkware.</p>
+              <span class="category-price">From $8 each</span>
+            </div>
+          </a>
+          <a href="shop.html#rugs" class="category-card">
+            <div class="category-visual" aria-hidden="true">🧶</div>
+            <div class="category-body">
+              <h3>Custom Rugs</h3>
+              <p>Accent rugs, door mats &amp; statement pieces.</p>
+              <span class="category-price">From $49 each</span>
+            </div>
+          </a>
+          <a href="shop.html#hats" class="category-card">
+            <div class="category-visual" aria-hidden="true">🧢</div>
+            <div class="category-body">
+              <h3>Custom Hats</h3>
+              <p>Caps, beanies, dad hats &amp; embroidered patches.</p>
+              <span class="category-price">From $16 each</span>
+            </div>
+          </a>
+          <a href="shop.html#more" class="category-card">
+            <div class="category-visual" aria-hidden="true">✨</div>
+            <div class="category-body">
+              <h3>More Products</h3>
+              <p>Banners, decals, tote bags, signs &amp; special requests.</p>
+              <span class="category-price">Custom pricing</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
 
-    <div class="section-head">
-      <h2>Quick Actions</h2>
-    </div>
+    <!-- How it works: friction reduction -->
+    <section class="section section-alt" id="how-it-works">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow">Simple process</span>
+          <h2>How It Works</h2>
+          <p>Three steps from idea to delivered — no confusing checkout, no surprises.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card">
+            <span class="step-num">STEP 01</span>
+            <h3>Pick Your Product</h3>
+            <p>Choose stickers, shirts, cups, rugs, or tell us exactly what you need on a custom quote.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-num">STEP 02</span>
+            <h3>Send Your Design</h3>
+            <p>Upload your artwork or describe your vision. We send a free digital proof for approval.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-num">STEP 03</span>
+            <h3>We Make &amp; Ship</h3>
+            <p>Once approved, we produce your order and ship it straight to your door.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <div class="actions-grid">
-      <a class="action-card" href="#">
-        <div class="action-icon">📋</div>
-        <div class="action-body">
-          <h3>View Orders</h3>
-          <p>Check pending, in-progress, and completed custom orders.</p>
+    <!-- Reviews: social proof near conversion -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow">Real customers</span>
+          <h2>Loved by Creators &amp; Brands</h2>
+          <p>Don't just take our word for it — here's what people are saying.</p>
         </div>
-      </a>
-      <a class="action-card" href="#">
-        <div class="action-icon">👤</div>
-        <div class="action-body">
-          <h3>Customers</h3>
-          <p>Look up repeat clients and order history.</p>
+        <div class="reviews-grid">
+          <article class="review-card" itemscope itemtype="https://schema.org/Review">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text" itemprop="reviewBody">"ordered custom stickers for my small biz and they came out perfect. colors were spot on and shipping was fast"</p>
+            <div class="review-author" itemprop="author">Jordan M.</div>
+            <div class="review-role">Sticker order · Verified buyer</div>
+          </article>
+          <article class="review-card">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">"got 24 shirts printed for our team event. quality is legit and cameron was super helpful with the design"</p>
+            <div class="review-author">Tasha R.</div>
+            <div class="review-role">Shirt bulk order</div>
+          </article>
+          <article class="review-card">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">"Custom rug for my studio turned out better than i expected. Will definitely be ordering cups next!!"</p>
+            <div class="review-author">Devon K.</div>
+            <div class="review-role">Custom rug</div>
+          </article>
         </div>
-      </a>
-      <a class="action-card" href="#">
-        <div class="action-icon">💰</div>
-        <div class="action-body">
-          <h3>Pricing</h3>
-          <p>Product price lists and quote templates.</p>
+      </div>
+    </section>
+
+    <!-- FAQ: SEO + ad objection handling -->
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow">Questions</span>
+          <h2>Frequently Asked Questions</h2>
         </div>
-      </a>
-    </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false">What's the minimum order?<span>+</span></button>
+            <div class="faq-a"><div class="faq-a-inner">Most stickers start at 50 pcs, shirts at 12, and cups at 24. Rugs and specialty items vary — request a free quote and we'll give you exact numbers.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false">How long does production take?<span>+</span></button>
+            <div class="faq-a"><div class="faq-a-inner">Standard turnaround is 3–5 business days after proof approval. Rush options available on most products — ask when you quote.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false">Do you ship nationwide?<span>+</span></button>
+            <div class="faq-a"><div class="faq-a-inner">Yes — we ship anywhere in the US. Local pickup may be available depending on your area. Shipping cost is calculated at checkout or included in your quote.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false">What file types do you accept?<span>+</span></button>
+            <div class="faq-a"><div class="faq-a-inner">PNG, JPG, PDF, AI, and SVG work best. Not sure if your file is print-ready? Send it anyway — we'll help you fix it for free.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false">Is there a free proof before printing?<span>+</span></button>
+            <div class="faq-a"><div class="faq-a-inner">Always. Every order gets a digital proof for your approval before anything goes to production. No surprises.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA band: dedicated conversion zone for ads -->
+    <section class="cta-band" id="quote">
+      <h2>Ready to Go Custom?</h2>
+      <p>Get a free quote in 24 hours. Tell us what you need — stickers, shirts, cups, rugs, or something totally different.</p>
+      <a href="quote.html" class="btn btn-primary btn-lg">Get My Free Quote →</a>
+    </section>
   </main>
 
-  <footer>
-    &copy; 2025 Black Sheep. Custom products POS.
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <span class="brand-logo-wrap">
+              <img src="images/logo.jpg" alt="Black Sheep" class="brand-logo" width="200" height="48" loading="lazy" />
+            </span>
+          </a>
+          <p>Custom stickers, shirts, cups, rugs, and more. Made to order with care.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="shop.html#stickers">Stickers</a>
+          <a href="shop.html#shirts">Shirts</a>
+          <a href="shop.html#cups">Cups</a>
+          <a href="shop.html#rugs">Rugs</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#faq">FAQ</a>
+          <a href="quote.html">Get a Quote</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="quote.html">Contact</a>
+          <a href="#faq">Shipping Info</a>
+          <a href="#faq">File Guidelines</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Black Sheep. All rights reserved.</span>
+        <span>Custom products · Made to order</span>
+      </div>
+    </div>
   </footer>
 
-  <script>
-    document.querySelectorAll('.product-card, .btn-primary').forEach(el => {
-      el.addEventListener('click', (e) => {
-        if (el.tagName === 'A') e.preventDefault();
-        const cat = el.dataset?.category || 'custom';
-        alert(`New ${cat} order — order flow coming soon.`);
-      });
-    });
+  <div class="sticky-cta" aria-label="Quick actions">
+    <a href="shop.html" class="btn btn-ghost">Shop</a>
+    <a href="quote.html" class="btn btn-primary">Free Quote</a>
+  </div>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"What's the minimum order?","acceptedAnswer":{"@type":"Answer","text":"Most stickers start at 50 pcs, shirts at 12, and cups at 24. Rugs and specialty items vary."}},
+      {"@type":"Question","name":"How long does production take?","acceptedAnswer":{"@type":"Answer","text":"Standard turnaround is 3–5 business days after proof approval."}},
+      {"@type":"Question","name":"Do you ship nationwide?","acceptedAnswer":{"@type":"Answer","text":"Yes — we ship anywhere in the US."}},
+      {"@type":"Question","name":"What file types do you accept?","acceptedAnswer":{"@type":"Answer","text":"PNG, JPG, PDF, AI, and SVG work best."}},
+      {"@type":"Question","name":"Is there a free proof before printing?","acceptedAnswer":{"@type":"Answer","text":"Always. Every order gets a digital proof for approval before production."}}
+    ]
+  }
   </script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

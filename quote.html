@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get a Free Quote — Black Sheep Custom Products</title>
+  <meta name="description" content="Request a free custom product quote from Black Sheep. Stickers, shirts, cups, rugs &amp; more — response within 24 hours." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://github.com/Raine5600/new-site/quote.html" />
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg" />
+  <meta property="og:title" content="Free Custom Product Quote — Black Sheep" />
+  <meta property="og:description" content="Get pricing in 24 hours. Stickers, shirts, cups, rugs &amp; more." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/Raine5600/new-site/main/images/logo.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="no-sticky">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-logo-wrap">
+          <img src="images/logo.jpg" alt="Black Sheep logo" class="brand-logo" width="280" height="56" />
+        </span>
+      </a>
+      <div class="header-actions">
+        <a href="shop.html" class="btn btn-ghost">Shop</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="quote-page">
+    <div class="quote-copy">
+      <h1>Get Your Free Quote</h1>
+      <p>Tell us what you're making — stickers, shirts, cups, rugs, or something totally custom. We'll send pricing and next steps within 24 hours.</p>
+      <div class="quote-trust">
+        <span>✓ Free digital proof</span>
+        <span>✓ No obligation</span>
+        <span>✓ Fast response</span>
+      </div>
+    </div>
+
+    <div class="quote-form-wrap">
+      <form class="quote-form" id="quoteForm">
+        <h2>Request a Quote</h2>
+        <p class="sub">Fill this out and we'll be in touch fast.</p>
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@email.com" required autocomplete="email" />
+        </div>
+        <div class="form-group">
+          <label for="product">Product Type</label>
+          <select id="product" name="product" required>
+            <option value="" disabled selected>Select a product…</option>
+            <option value="stickers">Custom Stickers</option>
+            <option value="shirts">Custom Shirts</option>
+            <option value="cups">Custom Cups / Drinkware</option>
+            <option value="rugs">Custom Rugs</option>
+            <option value="hats">Custom Hats</option>
+            <option value="more">Banners / Signs / Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="qty">Estimated Quantity</label>
+          <input type="text" id="qty" name="qty" placeholder="e.g. 50 stickers, 24 shirts" />
+        </div>
+        <div class="form-group">
+          <label for="details">Project Details</label>
+          <textarea id="details" name="details" placeholder="Describe your design, deadline, colors, sizes…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg form-submit">Send My Quote Request →</button>
+        <p class="form-note">We respect your privacy. Your info is never sold or shared.</p>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/main.js" defer></script>
+  <script>
+    // Pre-fill product from shop link or URL param
+    const params = new URLSearchParams(location.search);
+    const product = params.get('product') || sessionStorage.getItem('bs_product');
+    const select = document.getElementById('product');
+    if (product && select) {
+      const map = {
+        'vinyl-stickers': 'stickers', 'sticker-sheets': 'stickers',
+        'dtf-tee': 'shirts', 'embroidered-hoodie': 'shirts',
+        'custom-mug': 'cups', 'tumbler': 'cups',
+        'accent-rug': 'rugs', 'doormat': 'rugs',
+        'dad-hat': 'hats', 'banner': 'more', 'tote': 'more', 'custom': 'more'
+      };
+      const val = map[product] || product;
+      if ([...select.options].some(o => o.value === val)) select.value = val;
+    }
+  </script>
+</body>
+</html>

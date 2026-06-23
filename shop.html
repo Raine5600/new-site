@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop Custom Products — Black Sheep</title>
+  <meta name="description" content="Shop custom stickers, shirts, cups, rugs, hats, and more at Black Sheep. Transparent pricing, free proofs, fast turnaround." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://github.com/Raine5600/new-site/shop.html" />
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg" />
+  <meta property="og:title" content="Shop Custom Products — Black Sheep" />
+  <meta property="og:description" content="Stickers, shirts, cups, rugs &amp; more. From $0.45/sticker." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/Raine5600/new-site/main/images/logo.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div class="promo-bar"><strong>Free proof on every order</strong> · Filter by category below</div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="Black Sheep home">
+        <span class="brand-logo-wrap">
+          <img src="images/logo.jpg" alt="Black Sheep logo" class="brand-logo" width="280" height="56" />
+        </span>
+      </a>
+      <nav class="nav-desktop" aria-label="Main navigation">
+        <a href="shop.html" class="active">Shop</a>
+        <a href="index.html#how-it-works">How It Works</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <a href="quote.html" class="btn btn-primary">Get Free Quote</a>
+        <button class="cart-btn" type="button" aria-label="Cart">🛒<span class="cart-count">0</span></button>
+        <button class="menu-toggle" type="button" id="menuToggle" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="shop.html">Shop</a>
+      <a href="index.html#how-it-works">How It Works</a>
+      <a href="quote.html">Get Free Quote</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a> / <span>Shop</span>
+    </nav>
+
+    <div class="shop-toolbar">
+      <div>
+        <h1 style="font-family:'Pacifico',cursive;font-size:clamp(1.8rem,4vw,2.4rem);font-weight:400;margin-bottom:6px;">Shop Custom Gear</h1>
+        <p style="color:var(--gray-600);font-size:0.92rem;">Pick a product — we'll handle the rest.</p>
+      </div>
+      <div class="filter-pills" role="tablist" aria-label="Filter products">
+        <button class="filter-pill active" type="button" data-filter="all">All</button>
+        <button class="filter-pill" type="button" data-filter="stickers">Stickers</button>
+        <button class="filter-pill" type="button" data-filter="shirts">Shirts</button>
+        <button class="filter-pill" type="button" data-filter="cups">Cups</button>
+        <button class="filter-pill" type="button" data-filter="rugs">Rugs</button>
+        <button class="filter-pill" type="button" data-filter="hats">Hats</button>
+        <button class="filter-pill" type="button" data-filter="more">More</button>
+      </div>
+    </div>
+
+    <div class="product-grid" id="stickers">
+      <a href="quote.html?product=vinyl-stickers" class="product-card" data-category="stickers">
+        <div class="product-img" aria-hidden="true">🏷️</div>
+        <div class="product-info">
+          <h3>Die-Cut Vinyl Stickers</h3>
+          <div class="price">From $0.45 / ea</div>
+          <div class="meta">Min. 50 · Waterproof</div>
+        </div>
+      </a>
+      <a href="quote.html?product=sticker-sheets" class="product-card" data-category="stickers">
+        <div class="product-img" aria-hidden="true">📄</div>
+        <div class="product-info">
+          <h3>Kiss-Cut Sticker Sheets</h3>
+          <div class="price">From $12 / sheet</div>
+          <div class="meta">Min. 10 sheets</div>
+        </div>
+      </a>
+      <a href="quote.html?product=dtf-tee" class="product-card" data-category="shirts" id="shirts">
+        <div class="product-img" aria-hidden="true">👕</div>
+        <div class="product-info">
+          <h3>DTF Printed Tees</h3>
+          <div class="price">From $14 / ea</div>
+          <div class="meta">Min. 12 · Full color</div>
+        </div>
+      </a>
+      <a href="quote.html?product=embroidered-hoodie" class="product-card" data-category="shirts">
+        <div class="product-img" aria-hidden="true">🧥</div>
+        <div class="product-info">
+          <h3>Embroidered Hoodies</h3>
+          <div class="price">From $32 / ea</div>
+          <div class="meta">Min. 6 · Premium stitch</div>
+        </div>
+      </a>
+      <a href="quote.html?product=custom-mug" class="product-card" data-category="cups" id="cups">
+        <div class="product-img" aria-hidden="true">☕</div>
+        <div class="product-info">
+          <h3>Sublimated Mugs</h3>
+          <div class="price">From $8 / ea</div>
+          <div class="meta">Min. 24 · Dishwasher safe</div>
+        </div>
+      </a>
+      <a href="quote.html?product=tumbler" class="product-card" data-category="cups">
+        <div class="product-img" aria-hidden="true">🥤</div>
+        <div class="product-info">
+          <h3>Custom Tumblers</h3>
+          <div class="price">From $18 / ea</div>
+          <div class="meta">Min. 12 · Laser engraved or wrap</div>
+        </div>
+      </a>
+      <a href="quote.html?product=accent-rug" class="product-card" data-category="rugs" id="rugs">
+        <div class="product-img" aria-hidden="true">🧶</div>
+        <div class="product-info">
+          <h3>Custom Accent Rugs</h3>
+          <div class="price">From $49 / ea</div>
+          <div class="meta">Any size · Made to order</div>
+        </div>
+      </a>
+      <a href="quote.html?product=doormat" class="product-card" data-category="rugs">
+        <div class="product-img" aria-hidden="true">🚪</div>
+        <div class="product-info">
+          <h3>Printed Door Mats</h3>
+          <div class="price">From $35 / ea</div>
+          <div class="meta">Durable · Outdoor ready</div>
+        </div>
+      </a>
+      <a href="quote.html?product=dad-hat" class="product-card" data-category="hats" id="hats">
+        <div class="product-img" aria-hidden="true">🧢</div>
+        <div class="product-info">
+          <h3>Embroidered Dad Hats</h3>
+          <div class="price">From $16 / ea</div>
+          <div class="meta">Min. 12</div>
+        </div>
+      </a>
+      <a href="quote.html?product=banner" class="product-card" data-category="more" id="more">
+        <div class="product-img" aria-hidden="true">🎪</div>
+        <div class="product-info">
+          <h3>Vinyl Banners</h3>
+          <div class="price">From $29</div>
+          <div class="meta">Events · Business · Custom size</div>
+        </div>
+      </a>
+      <a href="quote.html?product=tote" class="product-card" data-category="more">
+        <div class="product-img" aria-hidden="true">👜</div>
+        <div class="product-info">
+          <h3>Custom Tote Bags</h3>
+          <div class="price">From $9 / ea</div>
+          <div class="meta">Min. 24</div>
+        </div>
+      </a>
+      <a href="quote.html?product=custom" class="product-card" data-category="more">
+        <div class="product-img" aria-hidden="true">✨</div>
+        <div class="product-info">
+          <h3>Something Else?</h3>
+          <div class="price">Custom quote</div>
+          <div class="meta">Tell us what you need</div>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <section class="cta-band">
+    <h2>Not Sure What You Need?</h2>
+    <p>Send us your idea — we'll recommend the right product and price it for free.</p>
+    <a href="quote.html" class="btn btn-primary btn-lg">Get Free Quote →</a>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom" style="border:none;padding-top:0;">
+      <span>&copy; 2025 Black Sheep</span>
+      <a href="index.html" style="text-decoration:none;color:inherit;">← Back to home</a>
+    </div>
+  </footer>
+
+  <div class="sticky-cta">
+    <a href="quote.html" class="btn btn-primary" style="flex:1;">Get Free Quote</a>
+  </div>
+
+  <script src="js/main.js" defer></script>
+  <script>
+    // Deep-link category filter from URL hash
+    const hash = location.hash.replace('#','');
+    if (hash) {
+      const pill = document.querySelector(`[data-filter="${hash}"]`);
+      if (pill) pill.click();
+    }
+    // Pre-select from query param
+    const product = new URLSearchParams(location.search).get('product');
+    if (product) sessionStorage.setItem('bs_product', product);
+  </script>
+</body>
+</html>
